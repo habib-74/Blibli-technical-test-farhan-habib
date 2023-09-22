@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: #0094DA;
+    padding: 20px;
+}
+
+header img {
+    width: 100px;
+}
+
+main {
+    padding: 15px;
+}
+
+.layout-1 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.layout-1 section {
+    margin: 5px;
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.item-1 {
+    width: 49%;
+    height: 300px;
+    background-color: #DBFB14;
+}
+
+.item-2 {
+    width: 49%;
+    height: 300px;
+    background-color: #2CF2FF;
+}
+
+.item-3 {
+    width: 100%;
+    background-color: #F474FF;
+    height: 300px;
+}
+
+.item-4 {
+    width: 100%;
+    background-color: #FF8A8A;
+    height: 300px;
+}
+
+.item-5 {
+    width: 100%;
+    height: 300px;
+}
+
+footer {
+    background-color: #D9D9D9;
+    padding: 50px;
+}
+
+footer p {
+    text-align: justify;
+}
+
+footer h3 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer {
+    background-color: #D9D9D9;
+    padding: 50px; /* Adjust as needed */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+}
+
+footer p {
+    text-align: justify;
+    margin: 0;
+}
+
+footer h3 {
+    text-align: center;
+    margin-top: px;
+    margin-bottom: 20px;
+}
+
+/* Additional styles for the button */
+#toggleButton {
+    display: block;
+    margin: 20px auto;
+    color: black;
+    border: none;   
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 182px;
+    margin: auto;
+    text-align: left;
+    font-family: arial;
+    border-radius: 12pt;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 13pt 13pt 0pt 0pt;
+}
+
+.konten {
+    padding: 0px 15px 15px 15px;
+}
+
+.konten button {
+    border-radius: 10pt;
+}
+
+.card h4 {
+    font-size: 13pt;
+    color: #F59E00;
+}
+
+.card h5 {
+    font-size: 12pt;
+}
+
+.card h3 {
+    font-size: 15pt;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.discount {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.discount p {
+    background-color: rgb(162, 101, 101);
+    color: red;
+    font-size: 12pt;
+    padding: 5px;
+    border-radius: 27px;
+    margin-left: 5px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #0094DA;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+.to-top {
+    background-color: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #0291DD;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 132px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+    }
+
+}
+
+#card-container {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    padding: 10px 0;
+}
+
+.scroll-button {
+    /* position: fixed; */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .circle {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle i {
+    color: #0291DD;
+    font-size: 24px;
+  }
+  
+
+.scroll-button:focus {
+    outline: none;
+}
+
+.scroll-button:hover {
+    color: #0094DA;
+}
+
+.scroll-button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#scroll-left {
+    position: absolute;
+    top: 1200px; /* Mengatur jarak 20 piksel dari bagian atas */
+    left: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #scroll-right {
+    position: absolute;
+    top: 1200px; /* Mengatur jarak 20 piksel dari bagian atas */
+    bottom: 20px; /* Mengatur jarak 20 piksel dari bagian bawah */
+    right: 30px; 
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+
+#scroll-left {
+  left: 0;
+}
+
+#scroll-right {
+  right: 0;
+}
+
+.scroll-button:focus {
+  outline: none;
+}
+
+.scroll-button:hover {
+  color: #0094DA;
+}
+
+.scroll-button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 320px) {
+    header img {
+        width: 80px; /* Adjust as needed */
+    }
+
+    .layout-1 section {
+        width: 100%; /* Adjust as needed */
+        height: auto; /* Adjust as needed */
+        font-size: 20px; /* Adjust as needed */
+    }
+
+    .card {
+        width: 132px; /* Adjust as needed */
+        margin: 5px auto; /* Adjust as needed */
+    }
+
+    .konten {
+        padding: 0px 5px 5px 5px; /* Adjust as needed */
+    }
+
+    .card h3 {
+        font-size: 14px; /* Adjust as needed */
+    }
+
+    .card h4 {
+        font-size: 12px; /* Adjust as needed */
+    }
+
+    .card h5 {
+        font-size: 10px; /* Adjust as needed */
+    }
+
+    .price {
+        font-size: 16px; /* Adjust as needed */
+    }
+
+    .discount p {
+        font-size: 10px; /* Adjust as needed */
+    }
+
+    .card button {
+        font-size: 14px; /* Adjust as needed */
+    }
+}
+
+
